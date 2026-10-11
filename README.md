@@ -139,15 +139,16 @@ Trong cửa sổ MuJoCo: phím **8 / 9 / 6 / 7** đẩy robot về trước / sa
 ---
 
 
+<img width="990" height="770" alt="interactive" src="https://github.com/user-attachments/assets/0c6bbb17-f25c-43da-a8e6-5e56c316a8a1" />
+
+https://github.com/user-attachments/assets/8208e9b6-23a7-4f6f-8e0a-b6ec3bde5d5f
+
+
+
 ## 5. Yêu cầu
 
 1. Python >= 3.10 
 2. MuJoCo, OSQP, NumPy, SciPy, Matplotlib, Pillow
-
-
-https://github.com/user-attachments/assets/bdefa2ab-7bef-4dd3-bb1d-7c28c5d818ae
-https://github.com/user-attachments/assets/25798503-f812-4098-b783-47b79e3d1b75
-https://github.com/user-attachments/assets/d364e8ed-cd2f-449e-b617-1c8fe38f7afe
 
 
 ---
