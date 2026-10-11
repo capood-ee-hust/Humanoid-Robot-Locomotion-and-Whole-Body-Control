@@ -141,7 +141,11 @@ Trong cửa sổ MuJoCo: phím **8 / 9 / 6 / 7** đẩy robot về trước / sa
 
 <img width="990" height="770" alt="interactive" src="https://github.com/user-attachments/assets/0c6bbb17-f25c-43da-a8e6-5e56c316a8a1" />
 
-https://github.com/user-attachments/assets/8208e9b6-23a7-4f6f-8e0a-b6ec3bde5d5f
+
+
+https://github.com/user-attachments/assets/899ddedb-263b-4cb2-bacc-3fb58141618a
+
+
 
 
 
