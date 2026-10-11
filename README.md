@@ -64,11 +64,11 @@ Sau đó tích phân xuôi trọng tâm bằng $\dot{c} = \omega(\xi - c)$. Góc
 
 $$\Delta q = J^\top \left(J J^\top + \lambda I\right)^{-1} e$$
 
-### 2.4 MPC có chỉnh chỗ đặt chân (kịch bản 4, 5)
+### 2.4 MPC 
 
 Mỗi 20 ms, MPC nhìn trước $T = 1.6$ s ($N = 32$ khoảng, mỗi khoảng $\Delta = 0.05$ s). Biến quyết định là các ZMP tương lai $p_0, \dots, p_{N-1}$ và vị trí $s_1, \dots, s_M$ của tối đa $M = 3$ bước sắp đặt.
 
-**Ràng buộc ổn định** (DCM không được phân kỳ):
+**Ràng buộc ổn định** :
 
 $$\xi_0 = \sum_{k=0}^{N-1} a_k\, p_k + e^{-\omega T}\, \xi_T, \qquad a_k = e^{-\omega k \Delta} - e^{-\omega (k+1)\Delta}$$
 
