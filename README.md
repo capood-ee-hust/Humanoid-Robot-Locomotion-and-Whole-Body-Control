@@ -6,7 +6,7 @@
 1. [Tổng quan](#1-tổng-quan)
 2. [Cơ sở toán học](#2-cơ-sở-toán-học)
 3. [Cấu trúc dự án](#3-cấu-trúc-dự-án)
-4. [Cách chạy](#4-cách-chạy)
+4. [Cách chạy và kết quả mô phỏng](#4-cách-chạy-và-kết-quả-mô-phỏng)
 5. [Yêu cầu](#5-yêu-cầu)
 6. [Tài liệu tham khảo](#6-tài-liệu-tham-khảo)
 
@@ -114,7 +114,7 @@ Lớp an toàn chuyển sang giảm chấn mềm ($\tau = -k_d \dot{q}$) khi rob
 
 ---
 
-## 4. Cách chạy
+## 4. Cách chạy và kết quả mô phổng 
 ```bash
 python -m venv .venv
 .venv\Scripts\activate.bat
@@ -135,13 +135,19 @@ cd P07_g1_mpc_walking && python walk_straight_mpc.py   # 4. đi bộ động l�
 cd P07_g1_mpc_walking && python walk_plan_mpc.py       # 5. đi bộ động lực học vòng vật cản
 ```
 
-Trong cửa sổ MuJoCo: phím **8 / 9 / 6 / 7** đẩy robot về trước / sau / trái / phải, **Enter** đặt lại, **Space** tạm dừng.
+Trong cửa sổ MuJoCo: phím **8 / 9 / 6 / 7** đẩy robot về trước / sau / trái / phải, **Enter** đặt lại trạng thái ban đầu, **Space** tạm dừng.
 ---
+
 
 ## 5. Yêu cầu
 
 1. Python >= 3.10 
 2. MuJoCo, OSQP, NumPy, SciPy, Matplotlib, Pillow
+
+
+https://github.com/user-attachments/assets/bdefa2ab-7bef-4dd3-bb1d-7c28c5d818ae
+https://github.com/user-attachments/assets/25798503-f812-4098-b783-47b79e3d1b75
+https://github.com/user-attachments/assets/d364e8ed-cd2f-449e-b617-1c8fe38f7afe
 
 
 ---
