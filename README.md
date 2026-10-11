@@ -114,7 +114,7 @@ Lớp an toàn chuyển sang giảm chấn mềm ($\tau = -k_d \dot{q}$) khi rob
 
 ---
 
-## 4. Cách chạy và kết quả mô phổng 
+## 4. Cách chạy và kết quả mô phỏng 
 ```bash
 python -m venv .venv
 .venv\Scripts\activate.bat
