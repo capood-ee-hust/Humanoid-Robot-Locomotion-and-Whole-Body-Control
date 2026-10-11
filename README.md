@@ -54,7 +54,7 @@ DCM $\xi$ là phần không ổn định của chuyển động: nó chạy ra x
 
 $$\Delta\xi = \frac{F\,\Delta t}{m\,\omega}$$
 
-### 2.3 Quỹ đạo DCM từ bước chân (kịch bản 2, 3)
+### 2.3 Quỹ đạo DCM từ bước chân 
 
 ZMP nằm trên từng chân trụ $z_i$ trong một bước dài $T$. DCM được tính **ngược** từ bước cuối, nơi robot đứng yên:
 
@@ -88,7 +88,7 @@ $$c(t) = p_0 + (c_0 - p_0)\cosh(\omega t) + \frac{\dot{c}_0}{\omega}\sinh(\omega
 
 **Nhịp bước:** đồng hồ dáng đi chạy nhanh hoặc chậm hơn thời gian thật, $t_s \leftarrow t_s + \text{rate}\cdot dt$ với $\text{rate} \in [0.7, 1.6]$. Nhờ vậy sau cú đẩy robot có thể đặt chân sớm hơn hoặc đứng chân trụ lâu hơn.
 
-### 2.5 Điều khiển toàn thân bằng QP (kịch bản 1, 4, 5)
+### 2.5 Điều khiển toàn thân bằng QP (WBC-QP)
 
 Động lực học thân nổi của robot:
 
