@@ -23,6 +23,7 @@ Kịch bản thử nghiệm:
 3. **Đi vòng vật cản** — bộ lập bước chân A*, sau đó DCM và IK như kịch bản 2.
 4. **Đi bộ động lực học, chịu được cú đẩy** — điều khiển dự báo (MPC) trên mô hình con lắc ngược tuyến tính (LIPM) chọn ZMP và dời các bước chân sắp đặt. QP-WBC đổi kết quả thành mô-men khớp.
 5. **Đi bộ động lực học vòng vật cản** — đi theo kế hoạch A* của kịch bản 3 bằng MPC của kịch bản 4.
+6. **Đứng cân bằng khi chịu các lực tác động** - Training trong Google Colab
 
 <!-- ảnh / GIF ở đây -->
 
@@ -54,7 +55,7 @@ DCM $\xi$ là phần không ổn định của chuyển động: nó chạy ra x
 
 $$\Delta\xi = \frac{F\,\Delta t}{m\,\omega}$$
 
-### 2.3 Quỹ đạo DCM từ bước chân (kịch bản 2, 3)
+### 2.3 Quỹ đạo DCM từ bước chân 
 
 ZMP nằm trên từng chân trụ $z_i$ trong một bước dài $T$. DCM được tính **ngược** từ bước cuối, nơi robot đứng yên:
 
@@ -64,11 +65,11 @@ Sau đó tích phân xuôi trọng tâm bằng $\dot{c} = \omega(\xi - c)$. Góc
 
 $$\Delta q = J^\top \left(J J^\top + \lambda I\right)^{-1} e$$
 
-### 2.4 MPC có chỉnh chỗ đặt chân (kịch bản 4, 5)
+### 2.4 MPC 
 
 Mỗi 20 ms, MPC nhìn trước $T = 1.6$ s ($N = 32$ khoảng, mỗi khoảng $\Delta = 0.05$ s). Biến quyết định là các ZMP tương lai $p_0, \dots, p_{N-1}$ và vị trí $s_1, \dots, s_M$ của tối đa $M = 3$ bước sắp đặt.
 
-**Ràng buộc ổn định** (DCM không được phân kỳ):
+**Ràng buộc ổn định** :
 
 $$\xi_0 = \sum_{k=0}^{N-1} a_k\, p_k + e^{-\omega T}\, \xi_T, \qquad a_k = e^{-\omega k \Delta} - e^{-\omega (k+1)\Delta}$$
 
@@ -88,7 +89,7 @@ $$c(t) = p_0 + (c_0 - p_0)\cosh(\omega t) + \frac{\dot{c}_0}{\omega}\sinh(\omega
 
 **Nhịp bước:** đồng hồ dáng đi chạy nhanh hoặc chậm hơn thời gian thật, $t_s \leftarrow t_s + \text{rate}\cdot dt$ với $\text{rate} \in [0.7, 1.6]$. Nhờ vậy sau cú đẩy robot có thể đặt chân sớm hơn hoặc đứng chân trụ lâu hơn.
 
-### 2.5 Điều khiển toàn thân bằng QP (kịch bản 1, 4, 5)
+### 2.5 Điều khiển toàn thân bằng QP (WBC-QP)
 
 Động lực học thân nổi của robot:
 
@@ -143,8 +144,11 @@ Trong cửa sổ MuJoCo: phím **8 / 9 / 6 / 7** đẩy robot về trước / sa
 
 
 
-https://github.com/user-attachments/assets/899ddedb-263b-4cb2-bacc-3fb58141618a
 
+
+
+
+https://github.com/user-attachments/assets/f76bd2dd-b66a-4f61-9fc2-707f0a586ea6
 
 
 
