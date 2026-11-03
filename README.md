@@ -23,6 +23,7 @@ Kịch bản thử nghiệm:
 3. **Đi vòng vật cản** — bộ lập bước chân A*, sau đó DCM và IK như kịch bản 2.
 4. **Đi bộ động lực học, chịu được cú đẩy** — điều khiển dự báo (MPC) trên mô hình con lắc ngược tuyến tính (LIPM) chọn ZMP và dời các bước chân sắp đặt. QP-WBC đổi kết quả thành mô-men khớp.
 5. **Đi bộ động lực học vòng vật cản** — đi theo kế hoạch A* của kịch bản 3 bằng MPC của kịch bản 4.
+6. **Đứng cân bằng khi chịu các lực tác động** - Training trong Google Colab
 
 <!-- ảnh / GIF ở đây -->
 
@@ -143,8 +144,11 @@ Trong cửa sổ MuJoCo: phím **8 / 9 / 6 / 7** đẩy robot về trước / sa
 
 
 
-https://github.com/user-attachments/assets/899ddedb-263b-4cb2-bacc-3fb58141618a
 
+
+
+
+https://github.com/user-attachments/assets/f76bd2dd-b66a-4f61-9fc2-707f0a586ea6
 
 
 
