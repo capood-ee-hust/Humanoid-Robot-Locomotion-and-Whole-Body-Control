@@ -23,7 +23,7 @@ Kịch bản thử nghiệm:
 3. **Đi vòng vật cản** — bộ lập bước chân A*, sau đó DCM và IK như kịch bản 2.
 4. **Đi bộ động lực học, chịu được cú đẩy** — điều khiển dự báo (MPC) trên mô hình con lắc ngược tuyến tính (LIPM) chọn ZMP và dời các bước chân sắp đặt. QP-WBC đổi kết quả thành mô-men khớp.
 5. **Đi bộ động lực học vòng vật cản** — đi theo kế hoạch A* của kịch bản 3 bằng MPC của kịch bản 4.
-6. **Đứng cân bằng khi chịu các lực tác động** - Training trong Google Colab
+6. **Đứng cân bằng khi chịu các lực tác động và điều khiển chuyển động** - Training trong Google Colab
 
 <!-- ảnh / GIF ở đây -->
 
@@ -108,6 +108,7 @@ $$\tau = M_a \dot{v} + h_a - J_{c,a}^\top f$$
 Lớp an toàn chuyển sang giảm chấn mềm ($\tau = -k_d \dot{q}$) khi robot ngã hoặc bộ giải lỗi.
 
 ---
+### 2.6 
 
 ## 3. Sơ đồ khói hệ thống
 
@@ -134,12 +135,14 @@ cd P05_footstep_dcm  && python walk_straight.py        # 2. đi thẳng
 cd P05_footstep_dcm  && python run_walk_plan.py        # 3. đi vòng vật cản
 cd P07_g1_mpc_walking && python walk_straight_mpc.py   # 4. đi bộ động lực học
 cd P07_g1_mpc_walking && python walk_plan_mpc.py       # 5. đi bộ động lực học vòng vật cản
+cd P08_rl_locomotion && play_rl.py                     # 6. điều khiển chuyển động robot bằng policy đã train 
 ```
 
 Trong cửa sổ MuJoCo: phím **8 / 9 / 6 / 7** đẩy robot về trước / sau / trái / phải, **Enter** đặt lại trạng thái ban đầu, **Space** tạm dừng.
+Điều khiển Robot bằng các phím Right/Left/Up/Down 
 ---
 
-
+Các kết quả được lưu trong file results
 <img width="990" height="770" alt="interactive" src="https://github.com/user-attachments/assets/0c6bbb17-f25c-43da-a8e6-5e56c316a8a1" />
 
 
@@ -155,9 +158,9 @@ https://github.com/user-attachments/assets/f76bd2dd-b66a-4f61-9fc2-707f0a586ea6
 
 ## 5. Yêu cầu
 
-1. Python >= 3.10 
+1. Python 
 2. MuJoCo, OSQP, NumPy, SciPy, Matplotlib, Pillow
-
+   
 
 ---
 
