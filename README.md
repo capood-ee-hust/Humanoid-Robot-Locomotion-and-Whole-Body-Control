@@ -137,10 +137,9 @@ cd P07_g1_mpc_walking && python walk_straight_mpc.py   # 4. đi bộ động l�
 cd P07_g1_mpc_walking && python walk_plan_mpc.py       # 5. đi bộ động lực học vòng vật cản
 cd P08_rl_locomotion && play_rl.py                     # 6. điều khiển chuyển động robot bằng policy đã train 
 ```
-
 Trong cửa sổ MuJoCo: phím **8 / 9 / 6 / 7** đẩy robot về trước / sau / trái / phải, **Enter** đặt lại trạng thái ban đầu, **Space** tạm dừng.
 Điều khiển Robot bằng các phím Right/Left/Up/Down 
----
+
 
 Các kết quả được lưu trong file results
 <img width="990" height="770" alt="interactive" src="https://github.com/user-attachments/assets/0c6bbb17-f25c-43da-a8e6-5e56c316a8a1" />
